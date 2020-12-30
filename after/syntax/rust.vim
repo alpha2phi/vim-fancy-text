@@ -4,9 +4,6 @@ if exists('g:no_vim_fancy_text') || !has('conceal') || &enc != 'utf-8'
   finish
 endif
 
-syntax clear rsFancyOperator
-
-syntax match rsFancyOperator "=\@<!===\@!" conceal cchar=≖
 syntax match rsFancyOperator "!=" conceal cchar=≠
 syntax match rsFancyOperator "<=" conceal cchar=≤
 syntax match rsFancyOperator ">=" conceal cchar=≥
